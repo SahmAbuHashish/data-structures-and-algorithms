@@ -9,7 +9,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 - Insert the new value into the middle index of the new array
 - Copy the second half of the original array into the new array
 
-![Whiteboard]()
+![Whiteboard](./Screenshot%202023-04-05%20220940.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
