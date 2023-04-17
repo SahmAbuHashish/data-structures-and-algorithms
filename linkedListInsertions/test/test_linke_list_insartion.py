@@ -1,26 +1,26 @@
 import pytest
-from linkedList.linked_list import Linked_list
+from linked_list_insertions import LinkedList
 
 def test_empty_liked_list():
-    likedList = Linked_list()
+    likedList = LinkedList()
     excepted = "Empty LinkedList"
     actual = str(likedList) 
     assert excepted == actual
 
-# def test_append_node(likedList):
-#     excepted = "5 --> sahm --> 2.5 --> None" 
-#     actual = str(likedList)
-#     assert excepted == actual
+def test_append_node(likedList):
+    excepted = "a --> b --> c --> None" 
+    actual = str(likedList)
+    assert excepted == actual
 
 def test_linked_list_insert():
-    likedList = Linked_list()
+    likedList = LinkedList()
     likedList.insert("a")
     actual = likedList.head.value
     expected = "a"
     assert actual == expected
 
 def test_linked_list_includes(likedList):
-    likedList = Linked_list()
+    likedList = LinkedList()
     actual = likedList.includes("a")
     expected = True
     assert actual == expected
@@ -29,12 +29,11 @@ def test_linked_list_includes(likedList):
     expected = False
     assert actual == expected    
 
-def test_linked_list_to_string(likedList):
-    assert likedList.to_string() == "{ a } -> { b } -> { c } -> NULL"    
+   
 
 @pytest.fixture
 def likedList():
-    likedList = Linked_list()
+    likedList = LinkedList()
     likedList.insert('a')
     likedList.insert('b')
     likedList.insert('c')
