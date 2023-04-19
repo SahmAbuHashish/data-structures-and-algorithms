@@ -1,6 +1,7 @@
 from node import Node
 
 class LinkedList():
+   
     def __init__(self):
         self.head = None
 
@@ -29,7 +30,7 @@ class LinkedList():
             output += "None"
         return output
     
-
+    #Append a new node with the given value to the end of the linked list.
     def append(self, value):   
         node =  Node(value)  
         if self.head is None:
@@ -40,13 +41,13 @@ class LinkedList():
                 current = current.next
             current.next = node  
 
-
+    #inserts a new node at the beginning of the linked list with the given value.
     def insert(self, value):
         node = Node(value)
         node.next = self.head
         self.head = node
 
-
+    #Returns True if a node with the given value is present in the linked list, False otherwise.
     def includes(self, value):
         current = self.head
         while current:
@@ -55,7 +56,7 @@ class LinkedList():
             current = current.next
         return False 
     
-     
+    #Insert a new node with the given new value before the node with the given value in the linked list. 
     def insert_before(self, value, new_value):
         node = Node(new_value)
         if self.head is None:
@@ -75,7 +76,7 @@ class LinkedList():
                     previous = current
                     current = current.next
 
-    
+    #Insert a new node with the given new value after the node with the given value in the linked list.
     def insert_after(self, value, new_value):
         node = Node(new_value)
         if self.head is None:
@@ -91,7 +92,7 @@ class LinkedList():
                     current = current.next
 
 
-    #  delete the first matched node key in linked list
+    # delete the first matched node key in linked list
     def delete_node(self,key): 
         temp = self.head
         # 1 empty liked list
@@ -116,3 +117,25 @@ class LinkedList():
         prev.next = temp.next    
         temp = None
         return True
+    
+
+    #Returns the value of the node that is k places from the tail of the linked list.
+    def kthFromEnd(self,k):
+
+        if k < 1:
+            return None
+
+        p1 = p2 = self.head
+        
+        # Move p1 k nodes ahead
+        for i in range(k):
+            if p1 is None:
+                return None
+            p1 = p1.next
+
+        # Move both pointers until p1 reaches the end
+        while p1 is not None:
+            p1 = p1.next
+            p2 = p2.next
+
+        return p2.value
