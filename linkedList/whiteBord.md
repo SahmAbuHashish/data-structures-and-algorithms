@@ -23,9 +23,15 @@
 
 the big o for this approach will be :
 
-Time --> O(1) because there no looping over the list
-
-space -->O(1) because there is no use of an extra space
+- insert
+Big o Time --->O(n)   
+      Space--->O(1)  
+- includes
+Big o  Time--->O(1)  
+       Space--->O(1)     
+- to string
+Big o   Time--->O(n)  
+        Space--->O(n)  
 
 ---
 
