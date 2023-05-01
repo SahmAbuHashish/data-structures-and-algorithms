@@ -139,3 +139,55 @@ class LinkedList():
             p2 = p2.next
 
         return p2.value
+    
+   
+def zip_lists(list1: LinkedList, list2: LinkedList):
+
+     if list1.head is None:
+        return list2
+     if list2.head is None:
+        return list1
+
+     current1 = list1.head
+     current2 = list2.head
+     new_list = LinkedList()
+     new_list.head = current1
+
+     while current1 and current2:
+        temp1 = current1.next
+        temp2 = current2.next
+        current1.next = current2
+        current2.next = temp1
+        current1 = temp1
+        current2 = temp2
+
+     return new_list
+ 
+
+def merge_sorted_lists(list1: LinkedList, list2: LinkedList):
+     if list1.head is None:
+        return list2
+     if list2.head is None:
+         return list1
+
+     new_list = LinkedList()
+     current = new_list.head
+
+     current1 = list1.head
+     current2 = list2.head
+
+     while current1 and current2:
+        if current1.value <= current2.value:
+            current.next = current1
+            current1 = current1.next
+        else:
+            current.next = current2
+            current2 = current2.next
+        current = current.next
+
+     if current1:
+        current.next = current1
+     if current2:
+        current.next = current2
+
+     return new_list
