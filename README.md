@@ -9,5 +9,7 @@
 |linked list kth                    |[url](./linkedList/whiteBord.md)                    |
 |linked list zip                    |[url](./linkedList/whiteBord.md)                    |
 |stack-and-queue                    |[url](./stack-and-queue/WhiteBorad.md)              |
+|stack-queue-pseudo                 |[url](./stack-and-queue/stack_queue_pseudo.md)      |
+
 
 
