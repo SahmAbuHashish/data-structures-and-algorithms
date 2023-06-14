@@ -16,3 +16,5 @@
 |tree-max                           |[url](./tree_max/tree-max.md)                                      |
 |tree-breadth-first                 |[url](./tree_breadth_first/tree-breadth-first.md)                  |
 |sorting-insertion                  |[url](./sorting_insertion/sorting-insertion.md)                    |
+|sorting-merge                      |[url](./sorting_merge/sorting-merge.md)                            |
+
