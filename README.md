@@ -17,4 +17,4 @@
 |tree-breadth-first                 |[url](./tree_breadth_first/tree-breadth-first.md)                  |
 |sorting-insertion                  |[url](./sorting_insertion/sorting-insertion.md)                    |
 |sorting-merge                      |[url](./sorting_merge/sorting-merge.md)                            |
-
+|sorting-Comparisons                |[url](./sorting_Comparisons/sorting_Comparisons.md)                |
