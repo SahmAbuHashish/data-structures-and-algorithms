@@ -18,3 +18,5 @@
 |sorting-insertion                  |[url](./sorting_insertion/sorting-insertion.md)                    |
 |sorting-merge                      |[url](./sorting_merge/sorting-merge.md)                            |
 |sorting-Comparisons                |[url](./sorting_Comparisons/sorting_Comparisons.md)                |
+|hashtable                          |[url](./hashtable/hashtable.md)                                    |
+
