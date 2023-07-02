@@ -10,6 +10,8 @@
 |linked list zip                    |[url](./linkedList/whiteBord.md)                    |
 |stack-and-queue                    |[url](./stack-and-queue/WhiteBorad.md)              |
 |stack-queue-pseudo                 |[url](./stack-and-queue/stack_queue_pseudo.md)      |
+|stack-queue-animal-shelter         |[url](./stack_queue_animal_shelter/stack-queue-animal-shelter.md)  |
+
 
 
 
