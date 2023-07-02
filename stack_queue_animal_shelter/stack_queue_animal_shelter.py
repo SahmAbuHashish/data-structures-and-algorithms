@@ -46,6 +46,10 @@ class AnimalShelter():
         self.cat = Queue()
         self.dog = Queue()
     
+    #returns a string representation of the class AnimalShelter
+    def __str__(self):
+        return f"AnimalShelter(dog={self.dog}, cat={self.cat})"
+    
     #check if the animal is cat or dog then add it to the queue.
     def enqueue(self, animal):
         if animal["kind"] == "cat":
@@ -91,4 +95,42 @@ print(f"{dog.name}")
 cat = shelter.dequeue("cat")
 print(f"{cat.name}")
 
+#------------------------------------------------
+class Animal:
+    def __init__(self, species, name):
+        """
+        Initializes an empty Animal.
+        """
+        self.species = species
+        self.name = name
 
+class AnimalShelter:
+    def __init__(self):
+        """
+        Initializes an empty AnimalShelter.
+        """
+        self.dog_queue = []
+        self.cat_queue = []
+
+
+
+    def enqueue(self, animal):
+        """
+        add animal value to the end of list.
+        """
+        if animal.species == "dog":
+            self.dog_queue.append(animal)
+        elif animal.species == "cat":
+            self.cat_queue.append(animal)
+
+    def dequeue(self, pref):
+        """
+        Removes and returns the value of the front list.
+        """
+        if pref == "dog":
+            if len(self.dog_queue) > 0:
+                return self.dog_queue.pop(0)
+        elif pref == "cat":
+            if len(self.cat_queue) > 0:
+                return self.cat_queue.pop(0)
+        return None
