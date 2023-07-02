@@ -11,11 +11,19 @@
 
  to string
 
+ append
+
+ insert after
+
+ insert before
+
+ kth from end
+
 ---
 
 ## Whiteboard Process
 
-![Whiteboard]()
+![Whiteboard](./Screenshot%202023-04-19%20221746.png)
 
 ---
 
@@ -23,16 +31,36 @@
 
 the big o for this approach will be :
 
-- insert
-Big o Time --->O(n)   
-      Space--->O(1)  
-- includes
-Big o  Time--->O(1)  
-       Space--->O(1)     
 - to string
 Big o   Time--->O(n)  
         Space--->O(n)  
+- insert
+Big o Time --->O(1)   
+      Space--->O(1)  
 
+- includes
+Big o  Time--->O(1)  
+       Space--->O(1)        
+
+- append
+Big o Time --->O(n)  
+      Space--->O(1)
+
+- insert before
+Big o Time -->O(n)  
+      Space--->O(1)    
+
+- insert after
+Big o Time --->O(n)  
+      Space--->O(1)  
+
+- delete
+Big o Time --->O(n)  
+      Space--->O(1)    
+
+- kthFromEnd
+Big o Time --->O(n)  
+      Space--->O(1)  
 ---
 
 ## Solution
@@ -48,4 +76,8 @@ run the code by:
 
 ## [code](./linked_list.py)
 
+## [code](../linkedListInsertions/linked_list_insertions.py)
+
+
 ## [test](./test/liked_list_test.py)
+

@@ -18,3 +18,4 @@ if __name__ == "__main__":
 
     linked_list1.delete_node('c')
     print(linked_list1.includes("a"))
+    print(linked_list1.kthFromEnd(4))
