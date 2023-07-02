@@ -32,7 +32,7 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 
 ## Whiteboard Process
 
-![Whiteboard](.)
+![Whiteboard](./)
 
 ---
 
