@@ -19,4 +19,6 @@
 |sorting-merge                      |[url](./sorting_merge/sorting-merge.md)                            |
 |sorting-Comparisons                |[url](./sorting_Comparisons/sorting_Comparisons.md)                |
 |hashtable                          |[url](./hashtable/hashtable.md)                                    |
+|hashmap repeated word              |[url](./hashmap_repeated_word/hashmap_repeated_word.md)            |
+
 
