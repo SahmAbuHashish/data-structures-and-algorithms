@@ -24,3 +24,4 @@
 |hashmap-left-join                  |[url](./hashmap_left_join/hashmap_left_join.md)                    |
 |graph                              |[url](./graph/graph.md)                                            |
 |graph breadth first                |[url](./graph_breadth_first/graph_breadth_first.md)                |
+|graph business trip                |[url](./graph_business_trip/graph_business_trip.md)                |
